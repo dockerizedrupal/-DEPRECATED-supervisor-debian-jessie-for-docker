@@ -1,7 +1,7 @@
 docker-supervisor
 =================
 
-Docker image to run a PHP-FPM
+Docker image to run a Supervisor
 
 Build the Docker image by yourself
 ----------------------------------
