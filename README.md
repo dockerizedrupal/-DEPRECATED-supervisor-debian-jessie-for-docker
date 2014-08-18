@@ -1,7 +1,7 @@
 docker-supervisor
 =================
 
-Meant to be used as a Docker base image to run a Supervisor
+Meant to be used as a Docker base image with a pre-installed Supervisor
 
 Build the Docker image by yourself
 ----------------------------------
