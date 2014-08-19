@@ -1,11 +1,9 @@
 node default {
-  class { '::apt':
+  class { 'apt':
     always_apt_update => true
   }
 
-  package {[
-      'supervisor',
-    ]:
+  package { 'supervisor':
     ensure  => 'installed'
   }
 }
