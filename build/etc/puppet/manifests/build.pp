@@ -15,7 +15,8 @@ node default {
   }
 
   package { 'supervisor':
-    ensure  => 'installed'
+    ensure  => 'installed',
+    before => File['/etc/supervisor/conf.d/supervisord.conf']
   }
 
   file { '/etc/supervisor/conf.d/supervisord.conf':
