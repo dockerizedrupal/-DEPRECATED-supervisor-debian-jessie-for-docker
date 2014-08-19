@@ -21,6 +21,6 @@ node default {
 
   file { '/etc/supervisor/conf.d/supervisord.conf':
     ensure => present,
-    source => 'file:///tmp/build/etc/supervisor/conf.d/supervisord.conf'
+    source => '/tmp/build/etc/supervisor/conf.d/supervisord.conf'
   }
 }
