@@ -9,7 +9,4 @@ RUN chmod +x /tmp/build/build.sh
 RUN /tmp/build/build.sh
 RUN rm -rf /tmp/*
 
-ADD ./src/run.sh /opt/run.sh
-RUN chmod +x /opt/run.sh
-
 CMD ["/opt/run.sh"]
