@@ -2,7 +2,7 @@ docker-supervisor
 =================
 
 Pull the pre-built Docker image from the Docker registry
-----------------------------------------------------------------
+--------------------------------------------------------
 
     $ docker pull simpledrupalcloud/supervisor
 
