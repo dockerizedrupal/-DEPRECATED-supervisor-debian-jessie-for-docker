@@ -1,3 +1,11 @@
+class packages {
+  package {[
+      'supervisor'
+    ]:
+    ensure => present,
+  }
+}
+
 node default {
   file { '/run.sh':
     ensure => present,
@@ -5,18 +13,16 @@ node default {
     mode => 755
   }
 
-  exec { 'apt-get update':
-    path => ['/usr/bin']
-  }
+  include packages
 
-  package { 'supervisor':
-    ensure  => present,
-    require => Exec['apt-get update']
+  exec { 'apt-get update':
+    path => ['/usr/bin'],
+    before => Class['packages']
   }
 
   file { '/etc/supervisor/conf.d/supervisord.conf':
     ensure => present,
     source => '/tmp/build/etc/supervisor/conf.d/supervisord.conf',
-    require => Package['supervisor']
+    require => Class['packages']
   }
 }
