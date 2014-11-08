@@ -8,3 +8,7 @@
       && git checkout dev \
       && sudo docker build -t simpledrupalcloud/supervisor:dev . \
       && cd -
+
+## License
+
+**MIT**
