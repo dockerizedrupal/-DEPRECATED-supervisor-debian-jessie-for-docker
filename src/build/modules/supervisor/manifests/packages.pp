@@ -4,7 +4,8 @@ class supervisor::packages {
   }
 
   package {[
-      'supervisor'
+      'supervisor',
+      'python-pip'
     ]:
     ensure => present,
     require => Exec['apt-get update']
