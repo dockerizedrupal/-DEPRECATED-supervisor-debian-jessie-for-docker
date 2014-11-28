@@ -7,6 +7,6 @@ class supervisor {
   }
 
   exec { 'pip install supervisor-stdout':
-    path => ['/usr/sbin']
+    path => ['/usr/bin']
   }
 }
