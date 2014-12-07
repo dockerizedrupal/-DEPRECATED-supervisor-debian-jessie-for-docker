@@ -1,4 +1,4 @@
-FROM simpledrupalcloud/puppet:latest
+FROM simpledrupalcloud/puppet:dev
 
 MAINTAINER Simple Drupal Cloud <support@simpledrupalcloud.com>
 
