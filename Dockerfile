@@ -2,6 +2,7 @@ FROM simpledrupalcloud/puppet:latest
 
 MAINTAINER Simple Drupal Cloud <support@simpledrupalcloud.com>
 
+ENV TERM linux
 ENV DEBIAN_FRONTEND noninteractive
 
 ADD ./src /src
