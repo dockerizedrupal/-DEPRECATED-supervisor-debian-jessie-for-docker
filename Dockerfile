@@ -1,4 +1,4 @@
-FROM simpledrupalcloud/puppet:dev
+FROM viljaste/puppet:dev
 
 MAINTAINER Jürgen Viljaste <j.viljaste@gmail.com>
 
