@@ -6,7 +6,7 @@
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-supervisor.git "${TMP}" \
       && cd "${TMP}" \
       && git checkout dev \
-      && sudo docker build -t simpledrupalcloud/supervisor:dev . \
+      && sudo docker build -t viljaste/supervisor:dev . \
       && cd -
 
 ## License
