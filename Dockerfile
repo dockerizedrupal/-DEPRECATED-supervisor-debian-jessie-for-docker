@@ -8,4 +8,4 @@ ADD ./src /src
 
 RUN /src/entrypoint.sh build
 
-CMD ["/src/entrypoint.sh", "run"]
+ENTRYPOINT ["/src/entrypoint.sh", "run"]
