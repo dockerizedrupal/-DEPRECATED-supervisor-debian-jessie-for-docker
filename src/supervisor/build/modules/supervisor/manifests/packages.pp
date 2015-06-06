@@ -1,7 +1,6 @@
 class supervisor::packages {
   package {[
-      'supervisor',
-      'python-pip'
+      'supervisor'
     ]:
     ensure => present
   }
