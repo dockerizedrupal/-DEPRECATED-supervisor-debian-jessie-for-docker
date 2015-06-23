@@ -1,4 +1,4 @@
-FROM viljaste/puppet:debian-jessie
+FROM viljaste/puppet:latest
 
 MAINTAINER Jürgen Viljaste <j.viljaste@gmail.com>
 
