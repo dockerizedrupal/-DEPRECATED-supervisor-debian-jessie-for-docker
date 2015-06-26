@@ -1,4 +1,4 @@
-class supervisor::packages {
+class build::supervisor::packages {
   package {[
       'supervisor'
     ]:
