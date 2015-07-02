@@ -1,0 +1,27 @@
+#! /usr/bin/env bash
+
+set -eu
+
+PID_FILE="${1}"
+
+shift
+
+COMMAND="${@}"
+
+function kill_app(){
+  kill $(cat "${PID_FILE}")
+
+  exit
+}
+
+trap "kill_app" SIGINT SIGTERM
+
+${COMMAND}
+
+sleep 2
+
+while [ -f "${PID_FILE}" ] && kill -0 $(cat "${PID_FILE}"); do
+  sleep 0.5
+done
+
+exit 1000
