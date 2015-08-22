@@ -1,4 +1,4 @@
-FROM viljaste/puppet:latest
+FROM dockerizedrupal/puppet:latest
 
 MAINTAINER Jürgen Viljaste <j.viljaste@gmail.com>
 
