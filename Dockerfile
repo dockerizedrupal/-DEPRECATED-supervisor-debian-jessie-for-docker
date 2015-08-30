@@ -1,4 +1,4 @@
-FROM dockerizedrupal/puppet:latest
+FROM dockerizedrupal/puppet-debian-jessie:latest
 
 MAINTAINER Jürgen Viljaste <j.viljaste@gmail.com>
 
