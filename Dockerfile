@@ -1,4 +1,4 @@
-FROM dockerizedrupal/puppet-debian-jessie:1.0.4
+FROM dockerizedrupal/puppet-debian-jessie:1.0.5
 
 MAINTAINER Jürgen Viljaste <j.viljaste@gmail.com>
 
