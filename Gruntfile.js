@@ -1,5 +1,5 @@
-var current_version = '1.0.4';
-var new_version = '1.0.5';
+var current_version = '1.0.5';
+var new_version = '1.1.0';
 
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-replace');
@@ -31,7 +31,23 @@ module.exports = function(grunt) {
             {
               match: 'dockerizedrupal/supervisor-debian-jessie:' + current_version,
               replacement: 'dockerizedrupal/supervisor-debian-jessie:' + new_version
-            },
+            }
+          ],
+          usePrefix: false
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'docker-compose.yml',
+              'README.md'
+            ]
+          }
+        ]
+      },
+      task3: {
+        options: {
+          patterns: [
             {
               match: 'git checkout ' + current_version,
               replacement: 'git checkout ' + new_version
@@ -48,7 +64,7 @@ module.exports = function(grunt) {
           }
         ]
       },
-      task3: {
+      task4: {
         options: {
           patterns: [
             {

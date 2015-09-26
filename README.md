@@ -1,12 +1,21 @@
 # docker-supervisor-debian-jessie
 
+An intermediate base Docker image for [dockerizedrupal/base-debian-jessie](https://github.com/dockerizedrupal/docker-base-debian-jessie) that is used in the [Dockerized Drupal](https://dockerizedrupal.com/) project.
+
+## Run the container
+
+    CONTAINER="supervisor" && sudo docker run \
+      --name "${CONTAINER}" \
+      -h "${CONTAINER}" \
+      dockerizedrupal/supervisor-debian-jessie:1.1.0
+
 ## Build the image
 
     TMP="$(mktemp -d)" \
       && git clone https://github.com/dockerizedrupal/docker-supervisor-debian-jessie.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout 1.0.5 \
-      && sudo docker build -t dockerizedrupal/supervisor-debian-jessie:1.0.5 . \
+      && git checkout 1.1.0 \
+      && sudo docker build -t dockerizedrupal/supervisor-debian-jessie:1.1.0 . \
       && cd -
 
 ## License
