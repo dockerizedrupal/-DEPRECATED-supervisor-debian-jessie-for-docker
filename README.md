@@ -1,6 +1,8 @@
 # docker-supervisor-debian-jessie
 
-An intermediate base Docker image for [dockerizedrupal/base-debian-jessie](https://github.com/dockerizedrupal/docker-base-debian-jessie) that is used in the [Dockerized Drupal](https://dockerizedrupal.com/) project.
+An intermediate base Docker image for [dockerizedrupal/base-debian-jessie](https://github.com/dockerizedrupal/docker-base-debian-jessie).
+
+This project is part of the [Dockerized Drupal](https://dockerizedrupal.com/) initiative.
 
 ## Run the container
 
