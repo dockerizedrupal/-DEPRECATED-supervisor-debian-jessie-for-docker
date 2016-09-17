@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "supervisor-debian-jessie"
 
   config.vm.provider "virtualbox" do |v|
-    name = "dockerizedrupal-docker-supervisor-debian-jessie-" + VERSION
+    name = "dockerizedrupal--DEPRECATED-supervisor-debian-jessie-for-docker-" + VERSION
 
     name.gsub!(".", "-")
 

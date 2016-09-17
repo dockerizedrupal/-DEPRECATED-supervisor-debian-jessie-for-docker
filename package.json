@@ -1,9 +1,9 @@
 {
-  "name": "docker-supervisor-debian-jessie",
+  "name": "-DEPRECATED-supervisor-debian-jessie-for-docker",
   "version": "1.1.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dockerizedrupal/docker-supervisor-debian-jessie.git"
+    "url": "https://github.com/dockerizedrupal/-DEPRECATED-supervisor-debian-jessie-for-docker.git"
   },
   "license": "MIT",
   "dependencies": {

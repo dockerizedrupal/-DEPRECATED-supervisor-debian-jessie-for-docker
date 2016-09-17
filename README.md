@@ -1,6 +1,8 @@
-> **Notice:** *This project is part of the [Dockerized Drupal](https://dockerizedrupal.com/) initiative.*
+# WARNING
 
-# docker-supervisor-debian-jessie
+> **Notice:** *This project is deprecated. Read more about the reason why [here](https://github.com/dockerizedrupal/base-debian-jessie-for-docker/issues/3).*
+
+# -DEPRECATED-supervisor-debian-jessie-for-docker
 
 A base Docker image for [dockerizedrupal/base-debian-jessie](https://github.com/dockerizedrupal/docker-base-debian-jessie).
 
@@ -14,7 +16,7 @@ A base Docker image for [dockerizedrupal/base-debian-jessie](https://github.com/
 ## Build the image
 
     TMP="$(mktemp -d)" \
-      && git clone https://github.com/dockerizedrupal/docker-supervisor-debian-jessie.git "${TMP}" \
+      && git clone https://github.com/dockerizedrupal/-DEPRECATED-supervisor-debian-jessie-for-docker.git "${TMP}" \
       && cd "${TMP}" \
       && git checkout 1.1.1 \
       && sudo docker build -t dockerizedrupal/supervisor-debian-jessie:1.1.1 . \
