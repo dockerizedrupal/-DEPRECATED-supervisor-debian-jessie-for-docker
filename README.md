@@ -4,7 +4,7 @@
 
 # -DEPRECATED-supervisor-debian-jessie-for-docker
 
-A base Docker image for [dockerizedrupal/base-debian-jessie](https://github.com/dockerizedrupal/docker-base-debian-jessie).
+A base Docker image for [dockerizedrupal/base-debian-jessie](https://github.com/dockerizedrupal/base-debian-jessie-for-docker).
 
 ## Run the container
 
